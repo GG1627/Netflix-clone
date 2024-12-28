@@ -1,0 +1,108 @@
+.moreInfoScreen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.moreInfoScreen_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.moreInfoScreen_info {
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  width: 50%;
+  z-index: 1;
+}
+
+.moreInfoScreen_info > h1 {
+  font-size: 5rem;
+}
+
+.moreInfoScreen_info > h4 {
+  font-size: 1.5rem;
+}
+
+.moreInfoScreen_info > h2 {
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.moreInfoScreen_buttons {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.moreInfoScreen_buttons > button {
+  text-align: left;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+}
+
+.moreInfoScreen_buttons > button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
+}
+
+.play_button::before {
+  content: "\25B6";
+  color: white;
+  padding-right: 10px;
+  transition: all 0.2s;
+}
+
+.play_button:hover::before {
+  color: black;
+  transition: all 0.2s;
+}
+
+.moreInfoScreen--fadeBottom {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 55%,
+    #000 60%
+  );
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.moreInfoScreen--fadeMiddle {
+  position: absolute;
+  width: 25%;
+  height: 100vh;
+  background: linear-gradient(
+    270deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 20%,
+    #000 40%
+  );
+  top: 0;
+  left: 25%;
+  z-index: 0;
+}
